@@ -6,9 +6,9 @@ export const AddCategory=({setCategories})=>{
     setinputValue(e.target.value)
   }
   const handleSubmit=(e)=>{
-    e.preventDefault();
-    console.log('haciendo un sumit')
+    e.preventDefault();    
     setCategories(categoria=>[...categoria,inputValue])
+    setinputValue('')
   }
   return(
     <form onSubmit={handleSubmit}>
@@ -22,7 +22,7 @@ export const AddCategory=({setCategories})=>{
   )
 }
 
-AddCategory.propType={
+AddCategory.PropType={
   setCategories:PropType.func.isRequired
 }
 
