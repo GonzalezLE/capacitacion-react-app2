@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropType from 'prop-types';
+
 export const AddCategory=({setCategories})=>{
   const [inputValue,setinputValue]=useState('Hola mundo')
   const handleInputChange=(e)=>{
